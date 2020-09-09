@@ -1,2 +1,2 @@
-C#!/bin/bash
-ln -s ~/bin/ls/ __ls__
+#!/bin/bash
+ln -s  __ls__
