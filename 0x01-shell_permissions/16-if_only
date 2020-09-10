@@ -1,2 +1,3 @@
 #!/bin/bash
-if u=guillaume then chown -R betty hello 
+chown --from=guillaume betty hello
+ 
