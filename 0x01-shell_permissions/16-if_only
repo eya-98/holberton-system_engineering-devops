@@ -1,2 +1,2 @@
 #!/bin/bash
-if u=guillaume chmod betty hello 
+if u=guillaume then chmod betty hello 
