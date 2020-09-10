@@ -1,4 +1,4 @@
-./"eniac man page 
+./"eniac man page
 .TH man 2 "10 decembre 1945" "0.32" "eniac man page"  
 .SH NAME 
 .B eniac
@@ -16,4 +16,3 @@ ENIAC could be programmed to perform complex sequences of operations(2), includi
 no known bugs.
 .SH AUTHOR
 University of Pennsylvania.
-
