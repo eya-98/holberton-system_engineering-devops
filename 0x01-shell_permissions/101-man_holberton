@@ -1,4 +1,3 @@
-#!/bin/bash
 ./"eniac man page 
 .TH man 2 "10 decembre 1945" "0.32" "eniac man page"  
 .SH NAME 
@@ -8,7 +7,8 @@ eniac
 .SH DESCRIPTION
 Eniac was turing-complete, and able to solve "a large class of numerical problem" through reprogramming.
 .SH OPTIONS
-eniac does not take any options.
+.B eniac 
+does not take any options.
 .SH SEE ALSO
 ENIAC could be programmed to perform complex sequences of operations(2), including loops(2), branches, and subroutines(2).
 .SH BUGS 
