@@ -1,0 +1,18 @@
+#!/bin/bash
+./"eniac man page 
+.TH "man 2"  "10 decembre 1945" "eniac man page"  
+.SH NAME 
+eniac -the first electronic general-purpose digital computer.
+./SH SYNOPSIS
+eniac
+.SH DESCRIPTION
+Eniac was turing-complete, and able to solbe 'a large class of numerical problem' through reprogramming.
+.SH OPTIONS
+eniac does not take any options.
+.SH SEE ALSO
+ENIAC could be programmed to perform complex sequences of operations(2), including loopps(2), branches, and subroutines(2).
+.SH BUGS 
+no known bugs.
+.SH AUTHOR
+University of Pennsylvania.
+
