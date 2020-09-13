@@ -1,0 +1,2 @@
+C#!/bin/bash
+grep -f /root /etc/passwd
