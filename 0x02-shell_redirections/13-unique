@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -s " "|sort -u > uniq -u  
+sort -u | tr -s " "| uniq -u > cat   
