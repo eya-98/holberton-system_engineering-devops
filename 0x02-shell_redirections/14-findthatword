@@ -1,2 +1,2 @@
-C#!/bin/bash
-grep -f /root /etc/passwd
+BC#!/bin/bash
+grep -f /etc/passwd /root
