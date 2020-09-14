@@ -1,2 +1,2 @@
 #!/bin/bash
-find /etc/passwd /home/* |cat | sort -d 
+cut -d ":" -f1,6 |cat | sort 
