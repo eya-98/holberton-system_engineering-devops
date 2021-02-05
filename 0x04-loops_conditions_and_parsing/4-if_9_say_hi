@@ -6,7 +6,7 @@ do
 echo Holberton School
 if [ "$i" -eq 9 ];
 then
-echo hi
+echo Hi
 fi
 let i+=1
 done
