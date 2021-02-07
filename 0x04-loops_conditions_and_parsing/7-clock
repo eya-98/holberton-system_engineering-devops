@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
 #print time
 h=1
-m=0
-while [ "$m" -le 59 ] && [ "$h" -le 12 ];
+m=1
+while [ "$m" -le 60 ] && [ "$h" -le 12 ];
 do
-if [ "$m" -eq 1 ];
-then
+if [ "$m" -eq 60 ];
+then 
+m=0
 echo "Hour : $h"
 let h+=1
 else
 echo "$m"
-fi
-if [ "$m" -eq 59 ];
-then m=0
 fi
 let m+=1
 done
