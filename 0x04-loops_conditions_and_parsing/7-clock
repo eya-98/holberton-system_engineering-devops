@@ -8,10 +8,11 @@ if [ "$m" -eq 0 ];
 then 
 echo "Hour: $h"
 let h+=1
+let m+=1
 else
 echo "$m"
-fi
 let m+=1
+fi
 if [ "$m" -eq 60 ];
 then
 m=0
