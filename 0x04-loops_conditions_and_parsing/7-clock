@@ -2,6 +2,7 @@
 #print time
 h=1
 m=1
+echo "Hour : 0"
 while [ "$m" -le 60 ] && [ "$h" -le 12 ];
 do
 if [ "$m" -eq 60 ];
