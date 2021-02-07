@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #print time
-h=0
-m=0
+h="0"
+m="0"
 while [ "$m" -le 59 ] && [ "$h" -le 12 ];
 do
 if [ "$m" -eq 0 ];
