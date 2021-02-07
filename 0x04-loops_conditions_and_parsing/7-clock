@@ -6,7 +6,7 @@ while [ "$m" -le 59 ] && [ "$h" -le 12 ];
 do
 if [ "$m" -eq 0 ];
 then 
-echo "Hour : $h"
+echo "Hour: $h"
 let h+=1
 else
 echo "$m"
