@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stops 7-highlander
+
+pkill -f "highlander" --signal SIGKILL

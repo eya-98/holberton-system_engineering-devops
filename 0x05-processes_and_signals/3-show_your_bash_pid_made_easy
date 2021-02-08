@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bash PID made easy
+pgrep -l "bash"
