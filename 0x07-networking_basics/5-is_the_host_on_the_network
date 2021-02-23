@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#using the command ping that sends ICMP echo request to network hosts
+#A script that pings an IP address passed as an argument.
 
 if [ $# -eq 0 ]:
    then
