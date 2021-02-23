@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#this bash script is displaying "listen sockets" and shows "process PID/name"
+netstat -pl
