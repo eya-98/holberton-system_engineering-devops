@@ -1,3 +1,4 @@
+#server configuration
 file {'/tmp/holberton':
     ensure => 'present',
     mode    => '0744',
