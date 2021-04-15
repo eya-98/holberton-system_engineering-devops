@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Installing Nginx on Server
-apt-get update -y
-apt-get -y install nginx
-service nginx start
+sudo apt-get update -y
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo chown -R ubuntu:ubuntu /var/www
 echo "Holberton School" > /var/www/html/index.html
-service nginx restart
-
+sudo service nginx restart
