@@ -5,6 +5,6 @@ sudo apt-get install -y nginx
 sudo chown -R "$USER":"$USER" /var/www/
 sudo chown -R "$USER":"$USER" /etc/nginx
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
-location = "https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sudo sed -i "s/redirect_me/$location" /etc/nginx/sites-available/default 
+location="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "$location" /etc/nginx/sites-available/default
 sudo service nginx restart
