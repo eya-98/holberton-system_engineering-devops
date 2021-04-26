@@ -1,0 +1,1 @@
+BLOG in medium about everything that happens when you type holbertonschool.com in the browser
