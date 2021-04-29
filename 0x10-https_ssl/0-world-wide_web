@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Configure your domain zone so that the subdomain www points to your load-balancer IP 
+domain=$1
+if [ $# -eq 2 ] ; then
+    subdomain=$2
+    echo -n "The subdomain $2"
+    dig $2.$1 | grep -A1 'ANSWER SECTION:' | tail -n 1 | awk '{print " is a " $4 " record and points to " $5}'
+else
+    put=( "www" "lb-01" "web-01" "web-02" )
+    for i in "${put[@]}" ; do
+	echo -n "The subdomain $i"
+	dig $i.$1 | grep -A1 'ANSWER SECTION:' | tail -n 1 | awk '{print " is a "$4 " record and points to " $5}'
+    done
+fi
