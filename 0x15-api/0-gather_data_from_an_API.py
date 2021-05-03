@@ -17,9 +17,9 @@ if __name__ == "__main__":
     TASK_TITLE = []
     for i in details:
         TOTAL_NUMBER_OF_TASKS += 1
-        TASK_TITLE.append(i.get('title'))
         if i.get('completed') is True:
             NUMBER_OF_DONE_TASKS += 1
+            TASK_TITLE.append(i.get('title'))
     print('Employee {} is done with tasks({}/{}):'
           .format(EMPLOYEE_NAME,
                   NUMBER_OF_DONE_TASKS,
