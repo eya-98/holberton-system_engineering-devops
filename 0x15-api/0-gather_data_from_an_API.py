@@ -25,4 +25,4 @@ if __name__ == "__main__":
                   NUMBER_OF_DONE_TASKS,
                   TOTAL_NUMBER_OF_TASKS))
     for TASK in TASK_TITLE:
-        print("\t {}".format(TASK))
+        print("     {}".format(TASK))
