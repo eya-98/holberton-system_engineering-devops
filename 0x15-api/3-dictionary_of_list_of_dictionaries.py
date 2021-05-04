@@ -13,9 +13,9 @@ if __name__ == "__main__":
                 .format(ids)).json()
             tasks = []
             for task in todos:
-                tasks.append({"task": task.get("title"),
-                          "completed": task.get("completed"),
-                          "username": employee.get("username")})
+                tasks.append({"username": employee.get("username"),
+                              "task": task.get("title"),
+                              "completed": task.get("completed")})
             json_file = {ids: tasks}
             json.dump(json_file, employement)
 
