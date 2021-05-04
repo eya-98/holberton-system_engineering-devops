@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """using this REST API, returns information"""
+from sys import argv
 import csv
 import requests
-from sys import argv
 
 if __name__ == "__main__":
     employee_id = argv[1]
