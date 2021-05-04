@@ -17,5 +17,5 @@ if __name__ == "__main__":
                               "task": task.get("title"),
                               "completed": task.get("completed")})
             json_file = {ids: tasks}
-            json.dump(json_file, employement)
+            json.dump(json_file, employement, sort_keys=True)
 
