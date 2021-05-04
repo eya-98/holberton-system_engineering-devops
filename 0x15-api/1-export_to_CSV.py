@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """using this REST API, returns information"""
-from sys import argv
 import csv
+from sys import argv
 import requests
 
 if __name__ == "__main__":
