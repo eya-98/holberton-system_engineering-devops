@@ -10,10 +10,11 @@ if __name__ == "__main__":
             ids = employee.get('id')
             todos = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
                 .format(ids)).json()
+            dic = {}
             tasks = []
             for task in todos:
                 tasks.append({"task": task.get("title"),
                               "username": employee.get("username"),
                               "completed": task.get("completed")})
-            json_file = {ids: tasks}
-        json.dump(json_file, employement)
+            dic.update({ids: tasks})
+        json.dump(dic, employement)
