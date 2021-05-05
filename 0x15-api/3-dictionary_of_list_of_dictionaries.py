@@ -5,16 +5,18 @@ import requests
 
 if __name__ == "__main__":
     with open('todo_all_employees.json', mode='w') as employement:
-        employees = requests.get('https://jsonplaceholder.typicode.com/users/').json()
+        employees = requests.get(
+            'https://jsonplaceholder.typicode.com/users/').json()
         for employee in employees:
             ids = employee.get('id')
-            todos = requests.get('https://jsonplaceholder.typicode.com/users/{}/todos'
+            todos = requests.get(
+                'https://jsonplaceholder.typicode.com/users/{}/todos'
                 .format(ids)).json()
-            dic = {}
             tasks = []
+            json_file = {}
             for task in todos:
                 tasks.append({"task": task.get("title"),
                               "username": employee.get("username"),
                               "completed": task.get("completed")})
-            dic.update({ids: tasks})
-        json.dump(dic, employement)
+            json_file.update({ids: tasks})
+        json.dump(json_file, employement)
