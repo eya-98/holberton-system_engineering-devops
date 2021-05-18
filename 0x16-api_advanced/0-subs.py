@@ -10,5 +10,5 @@ def number_of_subscribers(subreddit):
         reddit_api = requests.get(url, headers={"User-Agent": "Custom"},
                                   allow_redirects=False).json()
         return reddit_api["data"]["subscribers"]
-    except Exception:
+    except KeyError:
         return 0
