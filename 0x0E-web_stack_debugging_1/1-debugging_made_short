@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # config nginx server
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo service nginx restart
+sudo service nginx start
 rm /run/nginx.pid
